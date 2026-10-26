@@ -1,0 +1,20 @@
+.pi-file { padding: 10px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); }
+.pi-file .row { gap: 8px; min-width: 0; flex-wrap: nowrap; }
+.pi-file b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 46vw; }
+.pi-opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px 14px; align-items: end; }
+.pi-opts div.field { display: grid; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--text-2); }
+.pi-opts .seg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pi-opts .check { padding-bottom: 10px; }
+.pi-progress { display: grid; gap: 6px; }
+.pi-progress progress { width: 100%; height: 8px; appearance: none; -webkit-appearance: none; border: 0; border-radius: 99px; background: var(--surface-3); overflow: hidden; }
+.pi-progress progress::-webkit-progress-bar { background: var(--surface-3); border-radius: 99px; }
+.pi-progress progress::-webkit-progress-value { background: var(--accent); border-radius: 99px; transition: width 200ms; }
+.pi-progress progress::-moz-progress-bar { background: var(--accent); border-radius: 99px; }
+.pi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+.pi-item { margin: 0; display: grid; gap: 8px; padding: 10px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); min-width: 0; }
+.pi-img { display: grid; place-items: center; aspect-ratio: 3 / 4; border-radius: 8px; overflow: hidden; }
+.pi-img img { max-width: 94%; max-height: 94%; object-fit: contain; box-shadow: 0 2px 12px rgba(0,0,0,.3); }
+.pi-item figcaption { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pi-item figcaption div { display: grid; min-width: 0; font-size: 13px; }
+.pi-item figcaption .faint { font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pi-item figcaption span:has(> svg) { display: contents; }
